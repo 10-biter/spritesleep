@@ -4,12 +4,7 @@
 * Read more at https://arcade.makecode.com/blocks/custom
 */
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
+
 
 /**
  * Custom blocks
@@ -25,5 +20,7 @@ namespace spriteSleep {
     //% block
     export function sleep(sprite:Sprite): void {
         controller.moveSprite(sprite, 0, 0)
+        sprite.setFlag(SpriteFlag.Ghost, true)
+
     }
 }
