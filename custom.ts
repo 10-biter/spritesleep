@@ -15,7 +15,7 @@ enum MyEnum {
  * Custom blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace custom {
+namespace spriteSleep {
     /**
      * TODO: describe your function here
      * @param n describe parameter here, eg: 5
@@ -23,16 +23,7 @@ namespace custom {
      * @param e describe parameter here
      */
     //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
-    }
-
-    /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
-     */
-    //% block
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
+    export function sleep(sprite:Sprite): void {
+        controller.moveSprite(sprite, 0, 0)
     }
 }
