@@ -9,7 +9,7 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#0fbc11 icon=""
+//% weight=100 color=#1c1f78 icon=""
 namespace spriteSleep {
     /**
      * TODO: describe your function here
