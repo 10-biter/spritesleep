@@ -7,7 +7,7 @@ namespace spriteSleep {
     }
     
 
-
+    //%block
     export function wakeUp(sprite:Sprite): void {
         controller.moveSprite(sprite)
         sprite.setFlag(SpriteFlag.Ghost, false)
